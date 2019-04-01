@@ -1,0 +1,63 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>Z
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="TextAppearance">
+        <item name="fontPath">@string/nunito.bold</item>
+    </style>
+
+    <style name="TextViewNormal">
+        <item name="android:textSize">@dimen/text_size_normal</item>
+        <item name="android:textColor">@color/colorTextGrayDark</item>
+    </style>
+
+    <style name="TextViewNormalGray">
+        <item name="android:textSize">@dimen/text_size_normal</item>
+        <item name="android:textColor">@color/colorTextGray</item>
+    </style>
+    <style name="TextViewNormalBlack">
+        <item name="android:textSize">@dimen/text_size_normal</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+    <style name="TextViewSmallGray">
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:textColor">@color/colorTextGray</item>
+    </style>
+
+    <style name="TextViewNormalWhite">
+        <item name="android:textSize">@dimen/text_size_normal</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="TextViewTitleWhite">
+        <item name="android:textSize">@dimen/text_size_title</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="EditTextLogin">
+        <item name="android:textSize">@dimen/text_size_normal</item>
+        <item name="android:paddingStart">@dimen/padding_small</item>
+        <item name="android:paddingEnd">@dimen/padding_small</item>
+        <item name="android:textColor">@color/colorTextGrayDark</item>
+        <item name="android:textColorHint">@color/colorTextGray</item>
+    </style>
+
+    <style name="TextViewLogo">
+        <item name="android:textSize">@dimen/text_size_logo</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="fontPath">@string/nunito.bold</item>
+    </style>
+dfd
+    <style name="ButtonCalculator">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">@dimen/text_size_title</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:background">@drawable/selector_btn_calculator</item>
+    </style>
+</resources>

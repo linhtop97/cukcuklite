@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_main">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true">
+
+            <TextView
+                android:id="@+id/tvLogo"
+                style="@style/TextViewLogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_124"
+                android:text="@string/misa"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/llUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_large"
+                android:orientation="horizontal"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvLogo">
+
+                <ImageView
+                    android:layout_width="@dimen/width_iv_left_of_et"
+                    android:layout_height="@dimen/height_iv_left_of_et"
+                    android:background="@drawable/background_left_et_username"
+                    android:contentDescription="@string/empty"
+                    android:padding="@dimen/padding_normal"
+                    app:srcCompat="@drawable/ic_user" />
+
+                <EditText
+                    android:id="@+id/etUsername"
+                    style="@style/EditTextLogin"
+                    android:layout_width="@dimen/width_et_right"
+                    android:layout_height="@dimen/height_iv_left_of_et"
+                    android:background="@drawable/background_right_et_username"
+                    android:hint="@string/username"
+                    android:inputType="text"
+                    tools:ignore="AutoFill" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="@dimen/line_height"
+                android:background="@color/colorGrayLight"
+                app:layout_constraintLeft_toLeftOf="@id/llUserName"
+                app:layout_constraintRight_toRightOf="@id/llUserName"
+                app:layout_constraintTop_toBottomOf="@id/llUserName" />
+
+            <LinearLayout
+                android:id="@+id/llPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/line_height"
+                android:orientation="horizontal"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/llUserName">
+
+                <ImageView
+                    android:layout_width="@dimen/width_iv_left_of_et"
+                    android:layout_height="@dimen/height_iv_left_of_et"
+                    android:background="@drawable/background_left_et_password"
+                    android:contentDescription="@string/empty"
+                    android:padding="@dimen/padding_normal"
+                    app:srcCompat="@drawable/ic_key" />
+
+                <EditText
+                    android:id="@+id/etPassword"
+                    style="@style/EditTextLogin"
+                    android:layout_width="@dimen/width_et_right"
+                    android:layout_height="@dimen/height_iv_left_of_et"
+                    android:background="@drawable/background_right_et_password"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    tools:ignore="AutoFill" />
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/cbRemember"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_normal"
+                android:background="@android:color/transparent"
+                android:button="@drawable/cb_selector_white"
+                android:text="@string/keep_me_sign_in"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_normal"
+                app:layout_constraintLeft_toLeftOf="@id/llPassword"
+                app:layout_constraintTop_toBottomOf="@id/llPassword" />
+
+            <Button
+                android:id="@+id/btnSignIn"
+                android:layout_width="@dimen/button_login_width"
+                android:layout_height="@dimen/button_login_height"
+                android:layout_marginTop="@dimen/margin_normal"
+                android:background="@drawable/background_button_normal"
+                android:text="@string/sign_in"
+                android:textColor="@color/colorBlueDark"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cbRemember" />
+
+            <TextView
+                android:id="@+id/tvRegister"
+                style="@style/TextViewNormalWhite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_normal"
+                android:padding="@dimen/padding_small"
+                android:text="@string/register_account"
+                app:layout_constraintLeft_toLeftOf="@id/btnSignIn"
+                app:layout_constraintRight_toRightOf="@id/btnSignIn"
+                app:layout_constraintTop_toBottomOf="@id/btnSignIn" />
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+</layout>
